@@ -1,3 +1,5 @@
+eval (/opt/homebrew/bin/brew shellenv)
+
 # Dotfiles for paths
 set DOTFILES "$HOME/.dotfiles"
 
@@ -8,10 +10,11 @@ if not functions -q fisher
     fish -c fisher
 end
 
+# TODO: look into volta instead? https://volta.sh/
 # Set Nodenv
 if status --is-interactive
     source (nodenv init - --no-rehash| psub)
-    set NODENV_VERSION 8.11.4
+    # set NODENV_VERSION 12.16.1
 end
 
 # Base16 Shell
@@ -23,20 +26,13 @@ end
 # Alias exa
 alias ll='exa -bghHliSa --git'
 
-# Alias gcam because it nice
-abbr -a gcam 'git add . && git commit -am'
+# Alias npm list to see all global
+abbr -a npmlist 'npm list -g --depth 0'
 
-abbr -e g
-# g convenience function - git
-function g -d "git <args> or git status"
-    if count $argv > /dev/null
-        git $argv
-    else
-        git status
-    end
-end
+# Alias code-insiders
+alias code='code-insiders'
 
-# e convenience function - editor
+# e convenience function
 function e -d "code <args> or code ."
     if count $argv > /dev/null
         code $argv
@@ -45,5 +41,21 @@ function e -d "code <args> or code ."
     end
 end
 
+# Alias gcam because it nice
+abbr -a gcam 'git add . && git commit -am'
+
+# g convenience function
+function g -d "git <args> or git status"
+    if count $argv > /dev/null
+        git $argv
+    else
+        git status
+    end
+end
+
 # Reload command
 abbr -a -g r! source ~/.config/fish/config.fish
+
+# Ruby
+set -g fish_user_paths "/usr/local/opt/ruby/bin" $fish_user_paths
+set -x PATH $PATH "/usr/local/lib/ruby/gems/2.6.0/bin"
