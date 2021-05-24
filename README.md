@@ -30,9 +30,9 @@ Dotfiles for easily setting up a new Dev machine with:
    to get extra commandline tools
 3. In terminal, run:
    ```
-   mkdir -p Dev/github.com/stephenlaughton &&
-   cd Dev/github.com/stephenlaughton &&
-   git clone https://github.com/stephenlaughton/dotfiles.git &&
+   mkdir -p Dev/github.com/gnujim &&
+   cd Dev/github.com/gnujim &&
+   git clone https://github.com/gnujim/dotfiles.git &&
    cd dotfiles &&
    ./install.sh
    ```
