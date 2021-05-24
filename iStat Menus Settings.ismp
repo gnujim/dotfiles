@@ -13,8 +13,18 @@
 	</dict>
 	<key>preferences</key>
 	<dict>
+		<key>Battery_MenubarCustomizeStates</key>
+		<integer>0</integer>
 		<key>Battery_MenubarMode</key>
 		<array>
+			<dict>
+				<key>key</key>
+				<string>101</string>
+				<key>uuid</key>
+				<string>774E3BB0-F834-4035-AABD-97371159A0F8</string>
+				<key>width</key>
+				<integer>4</integer>
+			</dict>
 			<dict>
 				<key>key</key>
 				<string>3</string>
@@ -146,19 +156,19 @@
 			</dict>
 			<dict>
 				<key>city</key>
-				<string>Seoul</string>
+				<string>Berlin</string>
 				<key>country</key>
-				<string>South Korea</string>
+				<string>Germany</string>
 				<key>identifier</key>
-				<integer>1835848</integer>
+				<integer>2950159</integer>
 				<key>latitude</key>
-				<real>37.566000000000003</real>
+				<real>52.524369999999998</real>
 				<key>longitude</key>
-				<real>126.97839999999999</real>
+				<real>13.41053</real>
 				<key>state</key>
-				<string>Seoul</string>
+				<string>Berlin</string>
 				<key>timezone</key>
-				<string>Asia/Seoul</string>
+				<string>Europe/Berlin</string>
 			</dict>
 			<dict>
 				<key>city</key>
@@ -232,7 +242,8 @@
 			<key>tle</key>
 			<string>ISS (ZARYA)             
 1 25544U 98067A   21139.07282891  .00001427  00000-0  34033-4 0  9994
-2 25544  51.6433 126.7254 0003180  17.9724  93.6795 15.49020890284082</string>
+2 25544  51.6433 126.7254 0003180  17.9724  93.6795 15.49020890284082
+</string>
 		</dict>
 	</dict>
 	<key>version</key>
